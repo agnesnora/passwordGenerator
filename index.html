@@ -11,26 +11,31 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@400;500;800&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
     <div id="container">
       <div class="hero">
         <h1 id="mainTitle">
-          Generate a <span style="color: #ff0095"><br />random password</span>
+          Generate a <span style="color: #55f991"><br />random password</span>
         </h1>
         <p id="paragraph">Never use an insecure password again.</p>
       </div>
 
-      <div>
-        <button id="genBtn" onclick="generate()">Generate passwords</button>
-        <input
-          id="length-el"
-          type="number"
-          min="8"
-          max="16"
-          value=""
-          placeholder="set length"
-        />
+      <div class="generate">
+        <div>
+          <button id="genBtn" onclick="generate()">Generate passwords</button>
+        </div>
+        <div>
+          <input
+            id="length-el"
+            type="number"
+            min="8"
+            max="16"
+            value=""
+            placeholder="set length"
+          />
+        </div>
       </div>
 
       <main>

@@ -1,36 +1,49 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@400;500;800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="container">
-        <div class="hero">
-            <h1 id="mainTitle">Generate a <span style="color:#ff0095"><br>random password</span></h1>
-            <p id="paragraph">Never use an insecure password again.</p>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div class="hero">
+        <h1 id="mainTitle">
+          Generate a <span style="color: #ff0095"><br />random password</span>
+        </h1>
+        <p id="paragraph">Never use an insecure password again.</p>
+      </div>
+
+      <div>
+        <button id="genBtn" onclick="generate()">Generate passwords</button>
+        <input
+          id="length-el"
+          type="number"
+          min="8"
+          max="16"
+          value=""
+          placeholder="set length"
+        />
+      </div>
+
+      <main>
+        <hr />
+        <div class="passwords">
+          <div><input type="text" id="password1-el" value="" /></div>
+          <div><input type="text" id="password2-el" value="" /></div>
+          <div><input type="text" id="password3-el" value="" /></div>
+          <div><input type="text" id="password4-el" value="" /></div>
         </div>
-        
-        <div>
-             <button id="genBtn" onclick="generate()">Generate passwords</button>
-             <input id="length-el" type="number" min = "8" max="16" value="" placeholder="set length">
-        </div>
-    
-       <main>
-           <hr>
-        <div class="passwords">   
-            <div><input type="text" id="password1-el" value =""> 
-                
-             
-                 <input type="text" id="password2-el" value =""> </div>
-        <div>
-                 <input type="text" id="password3-el" value =""> 
-                 <input type="text" id="password4-el" value ="">
-        </div>
-        
-        </main>
-        </div> <!-- end of div head -->
-        <script src="index.js"></script>
-    </body>
+      </main>
+    </div>
+    <!-- end of div head -->
+    <script src="index.js"></script>
+  </body>
 </html>

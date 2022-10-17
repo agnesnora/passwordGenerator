@@ -1,99 +1,100 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Karla', sans-serif;
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
-#container{
-    background-color:#1F2937;
-    width:550px;
-    height:550px;
+#container {
+  background-color: #1f2937;
+  width: 550px;
+  height: 150vh;
 }
 
-#mainTitle{
-    font-weight: 800;
-    font-size:40px;
-    line-height: 40px;
-    color:#fff;
-    padding-left:52px;
-    padding-top:118px;
+#mainTitle {
+  font-weight: 800;
+  font-size: clamp(2rem, 3vw, 200rem);
+  line-height: 1em;
+  color: #fff;
+  padding-left: 0.5em;
+  padding-top: 118px;
+  text-align: center;
 }
-#paragraph{
-    color:#D5D4D8;
-    padding-left:52px;
-    font-weight:lighter;
-    font-size:20px;
-    line-height:28px;
-    margin-bottom:51px;
-
-}
-
-#genBtn{
-    margin-left:52px;
-    padding-top:9px;
-    padding-bottom:9px;
-    padding-left:47px;
-    padding-right:17px;
-    background-color:#10B981;
-    border:none;
-    border-radius:6px;
-    color:#fff;
-    font-size:16px;
-    font-style:medium;
-    background-image: url("bolt.png");
-    background-repeat: no-repeat;
-    background-position: 20px;
-    margin-bottom:35px;
+#paragraph {
+  color: #d5d4d8;
+  padding-left: 0.5em;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 1.5em;
+  text-align: center;
 }
 
-#length-el{
-    border:none;
-    border-radius:6px;
-    padding-top:9px;
-    padding-bottom:9px;
-    width:100px;
-    text-align:center;
-    margin-left:10px;
-    font-size:16px;
-    font-style:medium;
-    color:#273549;
-    font-weight:400;
-    
-    
-    
+#genBtn {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 47px;
+  padding-right: 17px;
+  background-color: #10b981;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  font-style: medium;
+  background-image: url("bolt.png");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  margin-bottom: 1em;
 }
 
-hr{
-    color:#2F3E53;
-    border-style:solid;
-    width:446px;
-    margin-bottom:35px;
+#length-el {
+  border: none;
+  border-radius: 6px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 100px;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 16px;
+  font-style: medium;
+  color: #273549;
+  font-weight: 400;
 }
 
-.passwords{
-    display:flex;
-    margin-left:52px;
-    justify-content: center;
-    align-items:center;
-    
-    
-   
+hr {
+  color: #2f3e53;
+  border-style: solid;
+  width: 446px;
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 
-.passwords input{
-    background-color:#273549;
-    margin-bottom:27px;
-    width:211px;
-    height:39px;
-    border:none;
-    border-radius:6px;
-    text-align:center;
-    background-image: url("Icon.png");
-    background-repeat: no-repeat;
-    background-position:center;
-    color:#55F991;
-    font-size: 16px;
-    line-height:32px; 
-    
+.passwords {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.generate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.passwords input {
+  background-color: #273549;
+  margin-bottom: 27px;
+  width: 211px;
+  height: 39px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  background-image: url("Icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #55f991;
+  font-size: 16px;
+  line-height: 32px;
 }

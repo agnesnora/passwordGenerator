@@ -1,100 +1,75 @@
-html,
+
+
+/** LAYOUT  **/
 body {
   margin: 0 auto;
   padding: 0;
   font-family: "Inter", sans-serif;
   font-family: "Karla", sans-serif;
+  background-color: #0d0d0d;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  text-align: center;
 }
 
-#container {
-  background-color: #1f2937;
-  width: 550px;
-  height: 150vh;
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-#mainTitle {
-  font-weight: 800;
-  font-size: clamp(2rem, 3vw, 200rem);
-  line-height: 1em;
+form > input,
+form > button {
+  display: block;
+  text-align: center;
+  padding: 0.6em 2em;
+  border-radius: 6px;
+  border: none;
+}
+
+/** TYPOGRAPHY **/
+
+h1 {
+  font-size: 2rem;
   color: #fff;
-  padding-left: 0.5em;
-  padding-top: 118px;
-  text-align: center;
-}
-#paragraph {
-  color: #d5d4d8;
-  padding-left: 0.5em;
-  font-weight: lighter;
-  font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 1.5em;
-  text-align: center;
 }
 
-#genBtn {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 47px;
-  padding-right: 17px;
-  background-color: #10b981;
+p {
+  color: #bfbfbf;
+}
+
+hr {
+  color: #f27e7e;
+  width: 90vw;
+  margin: 1em auto 2em;
+  border: 1.5px solid #f27e7e;
+  border-radius: 3px;
+}
+
+.passwords {
+  background-color: #5e90f2;
+  padding: 0.7em 1.1em;
+  margin: 1em;
   border: none;
   border-radius: 6px;
+  text-align: center;
+  /* background-image: url("Icon.png");
+  background-repeat: no-repeat;
+  background-position: center; */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+button {
+  background-color: #f27e7e;
   color: #fff;
   font-size: 16px;
-  font-style: medium;
   background-image: url("bolt.png");
   background-repeat: no-repeat;
   background-position: 20px;
   margin-bottom: 1em;
 }
 
-#length-el {
-  border: none;
-  border-radius: 6px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  width: 100px;
-  text-align: center;
-  margin-left: 10px;
-  font-size: 16px;
-  font-style: medium;
-  color: #273549;
-  font-weight: 400;
-}
-
-hr {
-  color: #2f3e53;
-  border-style: solid;
-  width: 446px;
-  margin-top: 25px;
-  margin-bottom: 35px;
-}
-
-.passwords {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.generate {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.passwords input {
-  background-color: #273549;
-  margin-bottom: 27px;
-  width: 211px;
-  height: 39px;
-  border: none;
-  border-radius: 6px;
-  text-align: center;
-  background-image: url("Icon.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #55f991;
-  font-size: 16px;
-  line-height: 32px;
-}

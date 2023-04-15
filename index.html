@@ -14,41 +14,33 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
-    <div id="container">
-      <div class="hero">
-        <h1 id="mainTitle">
-          Generate a <span style="color: #55f991"><br />random password</span>
-        </h1>
-        <p id="paragraph">Never use an insecure password again.</p>
-      </div>
+    <header>
+      <h1>
+        Generate a <span style="color: #f24b59"><br />random password</span>
+      </h1>
+      <p>Never use an insecure password again.</p>
+    </header>
+    <form>
+      <button type="button" id="genBtn" onclick="generate()">
+        Generate passwords
+      </button>
+      <input
+        id="length-el"
+        type="number"
+        min="8"
+        max="16"
+        value=""
+        placeholder="set length"
+      />
+    </form>
+    <main>
+      <hr />
 
-      <div class="generate">
-        <div>
-          <button id="genBtn" onclick="generate()">Generate passwords</button>
-        </div>
-        <div>
-          <input
-            id="length-el"
-            type="number"
-            min="8"
-            max="16"
-            value=""
-            placeholder="set length"
-          />
-        </div>
-      </div>
-
-      <main>
-        <hr />
-        <div class="passwords">
-          <div><input type="text" id="password1-el" value="" /></div>
-          <div><input type="text" id="password2-el" value="" /></div>
-          <div><input type="text" id="password3-el" value="" /></div>
-          <div><input type="text" id="password4-el" value="" /></div>
-        </div>
-      </main>
-    </div>
-    <!-- end of div head -->
+      <input class="passwords" type="text" id="password1-el" value="" />
+      <input class="passwords" type="text" id="password2-el" value="" />
+      <input class="passwords" type="text" id="password3-el" value="" />
+      <input class="passwords" type="text" id="password4-el" value="" />
+    </main>
     <script src="index.js"></script>
   </body>
 </html>

@@ -8,16 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@400;500;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Karla:wght@400;500;800&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
     <header>
-      <h1>
-        Generate a <span style="color: #f24b59"><br />random password</span>
-      </h1>
+      <h1>Generate a <span style="color: #f24b59">random password</span></h1>
       <p>Never use an insecure password again.</p>
     </header>
     <form>
@@ -29,17 +27,17 @@
         type="number"
         min="8"
         max="16"
-        value=""
+        value="8"
         placeholder="set length"
       />
     </form>
     <main>
       <hr />
       <div class="passwords dots">
-        <input type="text" id="password1-el" value="" />
-        <input type="text" id="password2-el" value="" />
-        <input type="text" id="password3-el" value="" />
-        <input type="text" id="password4-el" value="" />
+        <input autocomplete="off" type="text" id="password1-el" value="" />
+        <input autocomplete="off" type="text" id="password2-el" value="" />
+        <input autocomplete="off" type="text" id="password3-el" value="" />
+        <input autocomplete="off" type="text" id="password4-el" value="" />
       </div>
     </main>
     <script src="index.js"></script>

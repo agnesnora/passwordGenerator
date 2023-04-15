@@ -78,17 +78,16 @@ let text = [
   ".",
 ];
 
-function length() {
-  let lengthEl = document.getElementById("length-el");
-}
+const lengthEl = document.getElementById("length-el");
+
 function generate() {
-  let pwEl1 = document.getElementById("password1-el");
+  const pwEl1 = document.getElementById("password1-el");
   pwEl1.value = getPassword();
-  let pwEl2 = document.getElementById("password2-el");
+  const pwEl2 = document.getElementById("password2-el");
   pwEl2.value = getPassword();
-  let pwEl3 = document.getElementById("password3-el");
+  const pwEl3 = document.getElementById("password3-el");
   pwEl3.value = getPassword();
-  let pwEl4 = document.getElementById("password4-el");
+  const pwEl4 = document.getElementById("password4-el");
   pwEl4.value = getPassword();
   document.querySelector(".passwords").classList.remove("dots");
 }

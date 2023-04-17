@@ -32,6 +32,7 @@ form > button {
 h1 {
   font-size: 2rem;
   color: #fff;
+  padding: 0 1em;
 }
 
 p {
@@ -40,7 +41,7 @@ p {
 
 hr {
   color: #f27e7e;
-  width: 82vw;
+  width: 90%;
   margin: 1em auto 2em;
   border: 1.5px solid #f27e7e;
   border-radius: 3px;

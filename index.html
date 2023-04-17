@@ -19,9 +19,7 @@
       <p>Never use an insecure password again.</p>
     </header>
     <form>
-      <button type="button" id="genBtn" onclick="generate()">
-        Generate passwords
-      </button>
+      <button type="button" id="gen-Btn">Generate passwords</button>
       <input
         id="length-el"
         type="number"
@@ -33,7 +31,7 @@
     </form>
     <main>
       <hr />
-      <div class="passwords dots">
+      <div class="passwords dots" id="passwords-container">
         <input autocomplete="off" type="text" id="password1-el" value="" />
         <input autocomplete="off" type="text" id="password2-el" value="" />
         <input autocomplete="off" type="text" id="password3-el" value="" />
